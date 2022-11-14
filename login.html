@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bgImg">
+        <div class="loginwrap" id="bgImg2">
+            <div class="container">
+               <a href="index.html">
+                <div class="img-content">
+                    <img src="images/logo.png" class="icon1" alt="Mritz Logo">
+                </div>
+               </a> 
+                <div class="login-content">
+                    <div class="box1">
+                        <h1>Let’s build experiences led by <span class="font-aqua">Tech Innovations.</span></h1>
+                        <div class="box1_Subcontent">
+                            <span class="font-aqua">Mritzs</span> is a forward-looking company that reimagines the
+                            future
+                            through technological leaps.
+                            We’re here to rebuild processes and recreate experiences through innovative tech solutions. 
+                        </div>
+                        <div class="box1_Subcontent_sub" style="font-size: 15px;">
+                            Our products help entrepreneurs modernize technology, shape culture and drive transformation
+                            to
+                            accelerate growth.
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div>
+                            <form id="myForm" action="/user/login" method="post"><!--//login.html -->
+                                <div class="form-content">
+                                    <div class="row2">
+                                        <div class="item">
+                                            <label for="email">Email Address</label>
+                                            <input id="email" type="email" name="email" placeholder="Email ID" />
+                                            <small>Error message</small>
+                                        </div>
+                                    </div>
+                                    <div class="row2">
+                                        <div class="item">
+                                            <label for="password">Password</label>
+                                            <input id="password" type="password" name="password"
+                                                placeholder="Password" />
+                                            <small>Error message</small>
+                                        </div>
+                                    </div>
+                                    <div class="btn-block">
+                                        <button type="submit">Sign In</button>
+                                    </div>
+                                    <div class="forgot">
+                                        <a href="/"><span style="border-bottom: 1px solid #10E9D8;">Forgot your
+                                                password?</span></a>
+                                    </div>
+
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="box3">
+                        <div class="box3_Subcontent">
+                            <span class="font-aqua">Mritzs</span> is a forward-looking company that reimagines the
+                            future
+                            through technological leaps.
+                            We’re here to rebuild processes and recreate experiences through innovative tech solutions. 
+                        </div>
+                        <div class="box3_Subcontent_sub" style="font-size: 15px;">
+                            Our products help entrepreneurs modernize technology, shape culture and drive transformation
+                            to
+                            accelerate growth.
+                        </div>
+                      
+                        <div class="footer">
+                            <div>Privacy Policy</div>
+                            <div>Terms of Use</div>
+                            <div>Cookie Policy</div>
+                        </div>
+                        <div class="copy">&copy 2021 MRITZ</div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const form = document.getElementById('myForm');
+
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+
+        form.addEventListener('submit', e => {
+            const emailValue = email.value.trim();
+            const passwordValue = password.value.trim();
+            if (emailValue === '') {
+                setErrorFor(email, 'Email cannot be blank');
+                e.preventDefault()
+                return
+            }
+            else {
+                setSuccessFor(email);
+            }
+
+            if (passwordValue === '') {
+                setErrorFor(password, 'Password cannot be blank');
+                e.preventDefault()
+                return
+            } else {
+                setSuccessFor(password);
+            }
+
+        });
+
+        function checkInputs() {
+            // trim to remove the whitespaces
+            
+
+        }
+        function setErrorFor(input, message) {
+            const formControl = input.parentElement;
+            const small = formControl.querySelector('small');
+            formControl.className = 'item error';
+            small.innerText = message;
+        }
+
+        // function setSuccessFor(input) {
+        //     if (email.value && password.value) {
+        //         window.location = "inside-mritz.html"
+        //     }
+        // }
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries())
+        if(params.hasOwnProperty('msg')) {
+            let element = document.createElement('div')
+            // element.id = "error-pop"
+            element.style = "padding: 12px 20px; font-size: 16px; box-shadow: 0px 5px 26px #000; position: absolute; border-radius: 10px; top: 30px; left: 0; left: 50%; transform: translate(-50%, -200px); background: #f87171; transition: all 0.4s ease;"
+            element.innerText = params['msg']
+            document.body.append(element)
+            setTimeout(() => {
+                element.style.transform = "translate(-50%, 0px)"
+            }, 100)
+            setTimeout(() => {
+                element.style.transform = "translate(-50%, -200px)"
+            }, 5000)
+            window.history.pushState({}, document.title, window.location.pathname)
+        }
+    </script>
+</body>
+
+</html>

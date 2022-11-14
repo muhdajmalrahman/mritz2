@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Join oru early access</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/page2.css'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="box1-container">
+                <a href="index.html">
+                    <div class="img-content">
+                        <img src="images/logo.png" class="icon1" alt="Mritz Logo">
+                    </div>
+                </a> 
+                 <form id="myForm" action="/user/add" method="post"><!--//login.html -->
+                    <div class="form-content">
+                        <div class="row1">
+                            <div class="item" id="first">
+                                <label for="fname">First Name</label>
+                                <input id="fname" type="text" name="firstname" placeholder="First name" />
+                                <!-- <p id="ErrorN" style="display:none;"></p> -->
+                                <small>Error message</small>
+                            </div>
+                            <div class="item" id="second">
+                                <label for="lname">Last Name</label>
+                                <input id="lname" type="text" name="lastname" placeholder="Last name" />
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="item">
+                                <label for="email">Email ID</label>
+                                <input id="email" type="email" name="email" placeholder="Email ID" />
+                                <!-- <p id="ErrorE" style="display:none;"></p> -->
+
+                                <small>Error message</small>
+                            </div>
+                        </div>
+
+                        <div class="row1-web">
+                            <div class="item" id="first">
+                                <label for="country">Country</label>
+                                <input id="country" type="text" name="country" placeholder="Country" />
+                                <!-- <p id="ErrorC" style="display:none;"></p> -->
+
+                                <small>Error message</small>
+                            </div>
+                            <div class="item" id="second">
+                                <label for="phone">Phone number</label>
+                                <input id="phone" type="number" name="phone" placeholder="Phone Number" />
+                                <!-- <p id="ErrorP" style="display:none;"></p> -->
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="item">
+                                <label for="company_name">Company Name</label>
+                                <input id="company_name" type="text" name="company" placeholder="Company Name" />
+                                <!-- <p id="ErrorCo" style="display:none;"></p> -->
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="item">
+                                <label for="job_title">Job Title</label>
+                                <input id="job_title" type="text" name="job" placeholder="Job Title" />
+                            </div>
+                        </div>
+                        <label class="container-checkBox">I agree to the <span
+                                style="margin-left:4px; border-bottom: .5px solid #10E9D8;">terms and conditions</span>.
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="btn-block">
+                            <button type="submit">Submit Request</button>
+                        </div>
+
+
+                    </div>
+                </form>
+                <!-- Email js script -->
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+                <!-- Email connection via email js -->
+                <script type="text/javascript"> 
+                    (function () { emailjs.init("user_b2BqKsjtnqRiTeyGKhFWg");})();
+                </script>
+            </div>
+
+        </div>
+
+        <div class="box2">
+            <div class="circle">
+                <img src="images/unsplash.png" class="icon1" alt="icon">
+            </div>
+            <div class="onlyInMob">
+                <img src="images/img1.png" alt="" class="img1">
+                <img src="images/img2.png" alt="" class="img2">
+                <img src="images/img3.png" alt="" class="img3">
+                <img src="images/img4.png" alt="" class="img4">
+                <img src="images/img5.png" alt="" class="img5">
+                <img src="images/img6.svg" alt="" class="img6">
+            </div>
+            <div class="img-content2">
+                <img src="images/logo.png" class="icon1" alt="Mritz Logo">
+            </div>
+            <div class="box2-container">
+                <div class="main_heading">
+                    <div>Join our</div>
+                    <div>early access<span class="fullstop">.</span></div>
+                </div>
+                <div class="box2-content">
+                    <!-- Join our early access list now and you’ll find out first when open up our first places inside the
+                    platform.
+                    Estimated early date january 2021 -->
+                    <!-- Join Mritz now and be a part of our Never Ending Technologies. Estimated early date january
+                    2021 -->
+                    <span style="font-weight: 600;">JOIN US</span> and be a part of Never ending Technologies.
+                </div>
+
+            </div>
+
+        </div>
+        <div class="box3">
+            <div class="box3-container">
+                <div class="footer">
+                    <div>Privacy Policy</div>
+                    <div>Terms of Use</div>
+                    <div>Cookie Policy</div>
+                </div>
+                <div class="footer">&copy 2021 MRITZ</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div id="error-pop" style="padding: 12px 20px; font-size: 16px; box-shadow: 0px 5px 26px #000; position: absolute; border-radius: 10px; top: 30px; left: 0; left: 50%; transform: translateX(-50%); background: #f87171;">
+        asdasdasd
+    </div> -->
+    <script>
+
+        const form = document.getElementById('myForm');
+        const username = document.getElementById('fname');
+        const email = document.getElementById('email');
+        const country = document.getElementById('country');
+        // const countryMob = document.getElementById('countryMob');
+        const phone = document.getElementById('phone');
+        const company_name = document.getElementById('company_name');
+
+        form.addEventListener('submit', e => {
+            
+            // listen to the form submission
+         
+            if(!checkInputs()){
+                console.log('asf')
+                e.preventDefault();
+            } 
+            
+
+        });
+        function checkInputs() {
+            // trim to remove the whitespaces
+            const usernameValue = username.value.trim();
+            const emailValue = email.value.trim();
+            const countryValue = country.value.trim();
+            const phoneValue = phone.value.trim();
+            const company_name_value = company_name.value.trim();
+            let success = true
+            
+            if (usernameValue === '') {
+                setErrorFor(username, 'Name cannot be blank');
+                success = false
+            } else {
+                setSuccessFor(username);
+            }
+            if (emailValue === '') {
+                setErrorFor(email, 'Email cannot be blank');
+                success = false
+            }
+            else {
+                setSuccessFor(email);
+            }
+
+            if (countryValue === '') {
+                setErrorFor(country, 'Country cannot be blank');
+                success = false
+            } else {
+                setSuccessFor(country);
+            }
+    
+            
+            if (phoneValue === '') {
+                setErrorFor(phone, 'Phone cannot be blank');
+                success = false
+            } else {
+                setSuccessFor(phone);
+            }
+            
+            
+            
+
+            if (company_name_value === '') {
+                setErrorFor(company_name, 'Company name cannot be blank');
+                success = false
+            } else {
+                setSuccessFor(company_name);
+            }
+
+            if (checkbox.checked == false) {
+                alert("Please agree to the terms and conditions")
+                success = false
+            } else {
+                setSuccessFor(checkbox)
+            }
+
+            return success
+        }
+        function setErrorFor(input, message) {
+            const formControl = input.parentElement;
+            const small = formControl.querySelector('small');
+            formControl.className = 'item error';
+            small.innerText = message;
+        }
+
+        function setSuccessFor(input) {
+            // if (fname.value && email.value && (phone.value || phoneMob.value) && company_name.value && (country.value || countryMob.value) && checkbox.checked) {
+            //     localStorage.setItem("username", fname.value)
+            //     window.location = "login.html"
+            //     console.log("hhh")
+            // }
+            
+
+        }
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries())
+        if(params.hasOwnProperty('msg')) {
+            let element = document.createElement('div')
+            // element.id = "error-pop"
+            element.style = "padding: 12px 20px; font-size: 16px; box-shadow: 0px 5px 26px #000; position: absolute; border-radius: 10px; top: 30px; left: 0; left: 50%; transform: translate(-50%, -200px); background: #f87171; transition: all 0.4s ease;"
+            element.innerText = params['msg']
+            document.body.append(element)
+            setTimeout(() => {
+                element.style.transform = "translate(-50%, 0px)"
+            }, 100)
+            setTimeout(() => {
+                element.style.transform = "translate(-50%, -200px)"
+            }, 5000)
+            window.history.pushState({}, document.title, window.location.pathname)
+        }
+
+    </script>
+
+</body>
+
+</html>

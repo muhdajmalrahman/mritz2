@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			CSS grid-row-end Property
+		</title>
+		
+		<style>
+			.main {
+				display: grid;
+				grid-template-columns: auto auto auto;
+				grid-gap: 20px;
+				padding: 30px;
+				background-color: green;
+			
+			}
+			.GFG {
+				text-align: center;
+				font-size: 35px;
+				background-color: white;
+				padding: 20px 0;
+			}
+			.Geeks1 {
+				grid-row-end: span 2;
+			}
+            .Geeks2 {
+				grid-row-end: span 3;
+			}
+            .Geeks3 {
+				grid-row-end: auto;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<ul class = "main">
+			<li class = "Geeks1 GFG">1</li>
+			<li class = "Geeks2 GFG">2</li>
+			<li class = "Geeks3 GFG">3</li>
+			<li class = "Geeks5 GFG">4</li>
+			<li class = "Geeks6 GFG">5</li>
+        </ul>
+	</body>
+</html>				

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MRITZ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+    <link rel="stylesheet" href="css/styleN.css">
+    <!--Owl C-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+</head>
+
+<body>
+    <div class="mcontainer">
+        <header>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Mritz logo" class="logo">
+            </a>
+            <div class="accessMob">
+                <a href="join-mritz.html" class="button-border">Access MRITZ</a>
+            </div>
+            <div class="menuToggler" onclick="toggleMenu()"></div>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="journey_to_mritz.html">JOURNEY TO MRITZ</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="partners.html">PARTNERS</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li class="mobOnly">
+                    <div style="display: flex; justify-content: space-between;">
+                        <img src="images/hrNav.svg" alt="line">
+                        <img src="images/logo.png" alt="Mritz Logo" width="75px" height="54px">
+                    </div>
+                </li>
+                <li> <a href="join-mritz.html" class="button-border">Access MRITZ</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="Mainbanner-containerBG">
+        <div class="bgVideo">
+            <video autoplay="" muted="" loop="" playsinline="" id="myVideo">
+                <source src="/videos/homeVideo.mp4" type="video/mp4">
+            </video>
+            <img src="images/video-gradient.png" alt="mritz" class="video-gradient">
+        </div>
+        <div class="fixedButton" style="display: none;">
+            <a href="join-mritz.html"><button class="fButton">
+                    <div>Join<span style="margin-left:5px;" class="font-aqua">MRITZ</span>
+                    </div>
+                </button></a>
+        </div>
+        <div class="dotsHome7"></div>
+        <div class="mcontainer">
+            <div class="gradient1"></div>
+            <div class="gradient1"></div>
+            <section class="banner-container">
+                <div class="banner-content">
+                    <h1>Inspiring<br />Powerful Minds,<br /><span class="font-aqua">Creating
+                            Bold<br />Solutions.</span>
+                    </h1>
+                    <div class="primary-btn2">
+                        <a href="join-mritz.html" class="button-primary">Join<span
+                                style="font-weight:800;margin-left:5px;">MRITZ</span></a>
+                    </div>
+                    <div class="banner_subContent">
+                        <div>Join our early access list now and you’ll find out first when open up our first places
+                            inside the platform. Estimated early date january 2021</div>
+                    </div>
+                    <div class="primary-btn">
+                        <a href="join-mritz.html" class="button-border">Join<span
+                                style="font-weight:800;margin-left:5px;">MRITZ</span></a>
+                    </div>
+                    <div class="primary-arrow">
+                        <img src="images/arrow-down.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <img src="images/top-seperator.png" alt="mritz" class="pages-seperator">
+    <!-- <div>
+        <img src="images/black-gradient-1.png" class="img-fluid" alt="">
+    </div> -->
+
+    <div class="expBanner-containerBG">
+        <div class="dotsExplore5"></div>
+        <div class="circleEllipseEXP"></div>
+        <div class="circleEllipseEXP2"></div>
+        <div class="container paddingMob">
+            <section class="exp-container" id="about" data-aos="fade-up">
+                <img src="images/bg-2.1-group.png" alt="" style="position: absolute; right: 10%;
+                top: 25%;">
+                <div class="expLeft">
+                    <h2>Explore the advance world of <span class="font-aqua">MRITZ</span></h2>
+                    <div class="explore_subContent">
+                        <div>Experience vast array of innovative solutions to successfully shape culture, drive
+                            transformations and accelerate growth.</div>
+                    </div>
+                    <div class="explore_subContent2">
+                        Change the future of Innovations with <span class="font-aqua">Mritz.</span><br />
+                        We built strategies with an insight of the needs and initiate meaningful innovations.
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <!--Video Presentation-->
+    <div class="vdeoContainer">
+        <div class="c-video">
+            <video class="video" onclick="this.paused?this.play():this.pause();" id="videow" poster="images/poster.png">
+                <source src="/videos/ai.mp4" type="video/mp4">
+            </video>
+            <div>
+                <button class="p-button-inner" id="playPauseBtn" onclick="play(event)">
+                    <img src="images/playWhite.svg" class="play" />
+                </button>
+            </div>
+            <div class="controls">
+                <div class="buttons">
+                    <button class="p-button" onclick="play(event)"><i class="fa fa-play"></i><i
+                            class="fa fa-pause"></i></button>
+                </div>
+                <div class="timeline">
+                    <div class="bar">
+                        <div class="inner"></div>
+                    </div>
+                </div>
+                <div class="fullScButton" onclick="fullScreen(event)">
+                    <img src="images/fullSc.svg" alt="fullscreen" class="fscreen" />
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--Highness-->
+    <div class="highnessContainerBg">
+        <div class="inspiredEllipse1"></div>
+        <div class="dotsInspired5"></div>
+        <div class="circleEllipseInspired2"></div>
+        <div class="circleEllipseIns"></div>
+        <div class="bcontainer">
+            <div class="highnessContainer" id="home">
+                <div class="DisplayFlex posRelative">
+                    <img src="images/highness.png" alt="Highness Image" class="hignessImg">
+                    <div class="container2">
+                        <h2>Why <span class="font-aqua">MRITZ</span> in Emirates ?</h2>
+                        <div class="highnessSubContent">
+                            Emirates is a hotbed for entrepreneurs not just to prosper but thrive. The entrepreneurial
+                            eco-system here favours those with innovative ideas or projects. The nitty-gritty for
+                            starting a business in the Emirates is simple and offers state-of-the-art infrastructure. In
+                            short, Emirates is the first choice for every entrepreneur. 
+
+                        </div>
+                        <div class="InspiredHeading">
+                            <h3>Inspired from<br />His Highness ‘<span class="font-aqua">Question</span>’</h3>
+                            <div class="highnessImgMob">
+                                <!-- <img src="images/highnessmobN.png" alt="Highness Image" class="hignessImg2"> -->
+                            </div>
+
+                            <div class="qt">
+
+                                <img src="images/quote-open.png" class="quoteImgH">
+                                <div class="whyNot">Why Not?
+                                </div>
+                                <!-- <img src="images/quote-close.png" class="quoteImgH"> -->
+
+                            </div>
+                            <div class="InspiredSubContent">
+                                When Sheikh Mohammed bin Rashid Al Maktoum was asked “why the UAE is on a fast spell of
+                                progress”, he answered “why not?”.
+
+                            </div>
+                            <div class="InspiredSubContent">
+                                The two simple words of profound wisdom made us
+                                rethink the possibilities and imagine the unimaginable. MRITZ was built from this spark
+                                of inspiration. 
+
+                            </div>
+                            <img src="images/hrNav.svg" alt="line" class="hrLine2">
+                            <div class="highnessName">
+                                H.H. Sheikh Mohammed Bin Rashid Al Makhtoum
+                            </div>
+                            <div class="highnessDesig">
+                                Vice President & Prime Minister of UAE,<br />
+                                Ruler of Emirate of Dubai
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Miqanda-->
+    <div class="miqandaBg">
+        <div class="dotsMiq4"></div>
+        <div class="circleEllipseMiq"></div>
+        <div class="container paddingMob">
+            <section class="miq-container" id="about" data-aos="fade-up">
+                <div class="miqLeft">
+                    <div class="FirstHeadingIndexHome">
+                        <img src="images/miqanda-logo.png" alt="miqanda-logo" class="miq-logo">
+                        <!-- <span class="miqanda">MIQANDA</span> -->
+                        <h1>Intelligent <span class="font-aqua">Bonding<br /></span>
+                        </h1>
+
+                        <div class="banner_subContentHome">
+                            <div>Miqanda is the newest sensation in the tech world that boosts the business acumen of
+                                entrepreneurs. The hi-tech hub offers highest accuracy, reliability and
+                                industry-specific
+                                information to make calculated business decisions.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="miqRight">
+                    <img src="images/miqanda 1.png" alt="line" class="miqImg">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!--Unlimited-->
+
+    <div class="unBg">
+        <div class="circleEllipseUN"></div>
+        <div class="container paddingMob">
+            <section class="un-container paddintT0" id="about" data-aos="fade-up">
+                <h5>Together we go beyond <span class="font-aqua">'Unlimited Opportunities'</span></h5>
+                <div class="un-containerSub">
+                    Every organization and professional is confronted with the challenge of rapid change.
+                    We turn adversity into opportunity.
+                </div>
+                <div class="home-demo">
+                    <div class="blkEllipse"></div>
+                    <div class="owl-one owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="item-wrapper">
+                                <div class="sliderIcon1">
+                                    <img src="images/smart.png" alt="line" class="sliderIcon1">
+                                </div>
+                                <h6>Smart</h6>
+                                <p>People, Planning, Communication</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-wrapper">
+                                <div class="sliderIcon2">
+                                    <img src="images/intelligence.png" alt="line" class="sliderIcon2">
+                                </div>
+
+                                <h6>Artificial Intelligence</h6>
+                                <p>Authenticator, Assisted Solutions, Timely follow-up</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-wrapper">
+                                <div class="sliderIcon3">
+                                    <img src="images/closure.png" alt="line" class="sliderIcon3">
+                                </div>
+
+                                <h6>Closure</h6>
+                                <p>Strong project Closure</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-wrapper">
+                                <div class="sliderIcon1">
+                                    <img src="images/intelligence.png" alt="line" class="sliderIcon1">
+                                </div>
+
+                                <h6>Artificial Intelligence</h6>
+                                <p>People, Planning, Communication</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="item">
+                            <div class="sliderIcon2">
+                                <img src="images/Vector1.png" alt="line" class="sliderIcon2">
+                            </div>
+
+                            <h6>Artificial Intelligence</h6>
+                            <p>Authenticator, Assisted Solutions, Timely follow-up</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="sliderIcon3">
+                                <img src="images/Vector3.png" alt="line" class="sliderIcon3">
+                            </div>
+
+                            <h6>Closure</h6>
+                            <p>Strong project Closure</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="sliderIcon2">
+                                <img src="images/Vector1.png" alt="line" class="sliderIcon2">
+                            </div>
+
+                            <h6>Artificial Intelligence</h6>
+                            <p>Authenticator, Assisted Solutions, Timely follow-up</p>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <!-- upcoming projects -->
+    <div class="projectBg" id="first">
+        <div class="circleEllipsePro"></div>
+        <div class="container">
+            <div class="projectWrapper">
+                <h2>Upcoming <span class="font-aqua">Projects</span></h2>
+                <div class="upcomingSubcontent">
+                    A host of tech innovations are waiting to be launched from our stables. These emerging
+                    <br />disruptive
+                    technologies will create a new revolution to transform the world. 
+                </div>
+                <div class="DisplayFlex1">
+                    <div class="projectBox1" id="p1" onmouseover="changeFirst(true,'images/proj_TCE.png','p2','p3','p4','p5','p6',
+                    'pIcon2','images/p2H.svg','pIcon3','images/p3H.svg','pIcon4','images/p4H.svg',
+                    'pIcon5','images/p5H.svg','pIcon6','images/p6H.svg')" onmouseout="changeFirst(false)"
+                        onclick="showModal('images/proj_TCE.png')">
+                        <img src="images/p1.svg" alt="icon" id="pIcon1" />
+                        <div style="font-size: 16px;text-align: center;margin-top: 20px;font-weight:600;">The Circle
+                            of
+                            Entreprenuer</div>
+
+                    </div>
+                    <div class="projectBox2" id="p2" onmouseover="changeFirst(true,'images/proj_mi_device.png','p1','p3','p4','p5','p6',
+                         'pIcon1','images/p1H.svg','pIcon3','images/p3H.svg','pIcon4','images/p4H.svg',
+                        'pIcon5','images/p5H.svg','pIcon6','images/p6H.svg')" onmouseout="changeFirst(false)"
+                        onclick="showModal('images/proj_mi_device.png')">
+                        <img src="images/p2.svg" alt="icon" id="pIcon2" />
+                        <div style="font-size: 16px;text-align: center;margin-top: 20px;font-weight:600;"
+                            id="changeClrP">MI Devices</div>
+                    </div>
+                    <div class="projectBox3" id="p3" onmouseover="changeFirst(true,'images/miStore.jpg','p1','p2','p4','p5','p6',
+                    'pIcon1','images/p1H.svg','pIcon2','images/p2H.svg','pIcon4','images/p4H.svg',
+                    'pIcon5','images/p5H.svg','pIcon6','images/p6H.svg')" onmouseout="changeFirst(false)"
+                        onclick="showModal('images/miStore.jpg')">
+                        <img src="images/p3.svg" alt="icon" id="pIcon3" />
+                        <div style="font-size: 16px;text-align: center;margin-top: 20px;font-weight:600;">MI Store
+                        </div>
+                    </div>
+                    <div class="projectBox4" id="p4" onmouseover="changeFirst(true,'images/proj_mistudio.png','p1','p2','p3','p5','p6',
+                    'pIcon1','images/p1H.svg','pIcon2','images/p2H.svg','pIcon3','images/p3H.svg',
+                    'pIcon5','images/p5H.svg','pIcon6','images/p6H.svg')" onmouseout="changeFirst(false)"
+                        onclick="showModal('images/proj_mistudio.png')">
+                        <img src="images/p4.svg" alt="icon" id="pIcon4" />
+                        <div style="font-size: 16px;text-align: center;margin-top: 20px;font-weight:600;">MI Studio
+                        </div>
+                    </div>
+                    <div class="projectBox5" id="p5" onmouseover="changeFirst(true,'images/proj_mi_media.png','p1','p2','p3','p4','p6',
+                    'pIcon1','images/p1H.svg','pIcon2','images/p2H.svg','pIcon3','images/p3H.svg',
+                    'pIcon4','images/p4H.svg','pIcon6','images/p6H.svg')" onmouseout="changeFirst(false)"
+                        onclick="showModal('images/proj_mi_media.png')">
+                        <img src="images/p5.svg" alt="icon" id="pIcon5" />
+                        <div style="font-size: 16px;text-align: center;margin-top: 20px;font-weight:600;">MI Media
+                        </div>
+                    </div>
+                    <div class="projectBox6" id="p6" onmouseover="changeFirst(true,'images/proj_mi_coin.png','p1','p2','p3','p4','p5',
+                    'pIcon1','images/p1H.svg','pIcon2','images/p2H.svg','pIcon3','images/p3H.svg',
+                    'pIcon4','images/p4H.svg','pIcon5','images/p5H.svg')" onmouseout="changeFirst(false)"
+                        onclick="showModal('images/proj_mi_coin.png')">
+                        <img src="images/p6.svg" alt="icon" id="pIcon6" />
+                        <div style="font-size: 16px;text-align: center;margin-top: 20px;font-weight:600;">MI Coin
+                        </div>
+                    </div>
+                    <div class="projectBox7" id="p7" style="display: none;">
+
+                    </div>
+                    <div class="projectBox8" id="p8" style="display: none;">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Unlimited-->
+
+    <div class="unBg">
+        <div class="container">
+            <section class="un-container2" id="about" data-aos="fade-up">
+                <h2>Channel <span class="font-aqua">Partners</span></h2>
+                <div class="un-containerSub">
+                    Being an MRITZ channel partner, entails joining a global team that is focused on success. Our
+                    channel partners are essential to our business aiding us to expand our presence in global markets.
+                </div>
+                <div class="home-demo">
+                    <div class="owl-two owl-carousel owl-theme">
+                        <div class="mainItem">
+                            <div class="item2" style="margin-bottom:30px">
+                                <div class="sliderIconP1">
+                                    <img src="images/partnerLogo1.png" alt="logo" class="sliderIconP1">
+                                </div>
+                            </div>
+                            <div class="item2">
+                                <div class="sliderIconP4">
+                                    <img src="images/partnerLogo4.png" alt="logo" class="sliderIconP4">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mainItem">
+                            <div class="item2" style="margin-bottom:30px">
+                                <div>
+                                    <img src="images/microsoft-logo.png" alt="logo" class="sliderIconP2">
+                                </div>
+                            </div>
+                            <div class="item2">
+                                <div class="sliderIconP5">
+                                    <img src="images/partnerLogo5.png" alt="logo" class="sliderIconP5">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mainItem">
+                            <div class="item2" style="margin-bottom:30px">
+                                <div class="sliderIconP3">
+                                    <img src="images/partnerLogo3.png" alt="logo" class="sliderIconP3">
+                                </div>
+                            </div>
+                            <div class="item2">
+                                <div class="sliderIconP6">
+                                    <img src="images/partnerLogo6.png" alt="logo" class="sliderIconP6">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mainItem">
+                            <div class="item2" style="margin-bottom:30px">
+                                <div class="sliderIconP8">
+                                    <img src="images/Frame.png" alt="logo" class="sliderIconP8">
+                                </div>
+                            </div>
+                            <div class="item2">
+                                <div class="sliderIconP7">
+                                    <img src="images/partnerLogo7.png" alt="logo" class="sliderIconP7">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--bottomBar-->
+                <div class="bottomBar marginT120">
+
+                    <img src="images/dots7-copy.png" alt="" class="about-dot-left">
+
+                    <div class="bottomBarBox">
+                        <div class="bottomBarTitle">
+                            About MRITZ
+                        </div>
+                        <div class="bottomBarInfo">
+                            MRITZ is a forward-looking company that <br>reimagines the future through <br>technological
+                            leaps.
+                        </div>
+                        <a href="index.html">
+                            <div class="bottomBarBoxRM">
+                                Read more
+                                <span class="arrow">
+                                    <img src="images/Union2.svg" width="35px" height="12px">
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bottomBarBox">
+                        <div class="bottomBarTitle">
+                            Invest in MRITZ
+                        </div>
+                        <div class="bottomBarInfo">
+                            By investing in MRITZ, you are investing <br>in the future.
+                        </div>
+                        <a href="#" data-tf-popup="ygzUAMmU" data-tf-iframe-props="title=Join as Investor - MRITZ"
+                            data-tf-medium="snippet id=" apply">
+                            <div class="bottomBarBoxRM">
+                                Read more
+                                <span class="arrow">
+                                    <img src="images/Union2.svg" width="35px" height="12px">
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bottomBarBox">
+                        <div class="bottomBarTitle">
+                            Latest News
+                        </div>
+                        <div class="bottomBarInfo">
+                            MRITZ is a forward-looking company that <br>reimagines the future through <br>technological
+                            leaps
+                        </div>
+                        <a href="">
+                            <div class="bottomBarBoxRM">
+                                Read more
+                                <span class="arrow">
+                                    <img src="images/Union2.svg" width="35px" height="12px">
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <img src="images/dots5.png" alt="" class="about-dots-right">
+                </div>
+
+                <!-- </div> -->
+            </section>
+        </div>
+    </div>
+    <!--Subscribe-->
+    <div class="subscribeBg">
+        <div class="container">
+            <div class="subscribeContainer">
+                <div class="subscribe-content">
+                    <div class="subscribe">
+                        <div>Subscribe our newsletter</div>
+                    </div>
+                    <div class="email" style="width: 100%;">
+                        <form style="display: flex; align-items: center; justify-content: center;">
+                            <input type="text" placeholder="Email Address" class="emailInput">
+                            <input type="submit" name="Sign in" value="Sign up" class="emailSignIn" />
+                        </form>
+                    </div>
+                    <div class="footerSub">
+                        <div class="paddingR48"><a href="https://www.instagram.com/mritz.innovations/"> <img
+                                    src="images/insta.svg" width="28" height="28"></a></div>
+                        <div class="paddingR48"><img src="images/twitter.svg" width="28" height="28"></div>
+                        <div class="paddingR48"><img src="images/youtube.svg" width="28" height="28"></div>
+                        <div class="paddingR48"><a href="https://www.facebook.com/profile.php?id=100068552250500">
+                                <img src="images/fb.svg" width="28" height="28"></a></div>
+                        <div><a href="https://www.linkedin.com/in/mritz-innovations-758986229/"><img
+                                    src="images/linkedin.svg" width="28" height="28"></a></div>
+                    </div>
+                    <div class="layerFooter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footerMBg">
+        <div class="container">
+            <div class="footerWrapper">
+                <div style="font-size: 15px;font-weight: 400;line-height: 150%;">
+                    Location
+                </div>
+
+                <div style="font-size: 20px;font-weight: 400;margin-top: 14px;">
+                    Suite 202,The Square, Al Mamzar, Dubai, UAE
+
+                </div>
+                <div class="footerPlcy">
+                    <div style="padding-right: 20px;">Privacy Policy</div>
+                    <div style="padding-right: 20px;"><img src="images/blueDot.svg" width="7" height="7"></div>
+                    <div style="padding-right: 20px;">Terms of Use</div>
+                    <div style="padding-right: 20px;"><img src="images/blueDot.svg" width="7" height="7"></div>
+                    <div style="padding-right: 20px;">Cookie Policy</div>
+                    <div style="padding-right: 20px;"><img src="images/blueDot.svg" width="7" height="7"></div>
+                    <div style="padding-right: 20px;">&copy 2021 MRITZ</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="box3">
+            <!-- <div class="box3-container"> -->
+            <div class="footer">
+                <div class="fbox">
+                    <div>Privacy Policy</div>
+                    <div>Terms of Use</div>
+                    <div>Cookie Policy</div>
+                    <div>&copy 2021 MRITZ</div>
+                </div>
+                <div class="fbox" style="margin-top:20px">
+                    Suite 202,The Square, Al Mamzar, Dubai, UAE
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <!--jqry-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- <script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/61cf1a298d.js" crossorigin="anonymous"></script>
+
+    <!-- Typeform -->
+    <script src="//embed.typeform.com/next/embed.js"></script>
+
+    <script>
+        function toggleMenu() {
+            const menuToggle = document.querySelector(".menuToggler")
+            const navigation = document.querySelector(".menu")
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+    <!-- Join mritz btn show on Scroll top  -->
+    <script>
+        $(window).scroll(function () {
+
+            var windscroll = $(window).scrollTop();
+            /*
+            Since an average page height is not more than 720px so if windscroll >= 360 then let div appear.
+            */
+            if (windscroll >= 360) {
+                $(".fixedButton").css('display', 'block');
+
+            } else {
+
+                $(".fixedButton").css('display', 'none');
+            }
+        });
+    </script>
+
+    <script>
+        // Select the HTML5 video
+        const video = document.querySelector("#videow")
+        // set the pause button to display:none by default
+        document.querySelector(".fa-pause").style.display = "none"
+        //  document.querySelector(".pause").style.display = "none"
+        //  document.querySelector(".p-bytton-inner2").style.display = "none"
+        // update the progress bar
+        video.addEventListener("timeupdate", () => {
+            let curr = (video.currentTime / video.duration) * 100
+            if (video.ended) {
+                document.querySelector(".fa-play").style.display = "block"
+                document.querySelector(".fa-pause").style.display = "none"
+                document.querySelector(".play").src = "images/playWhite.svg"
+                document.querySelector(".play").style.display = "block"
+                document.querySelector(".p-button-inner").style.display = "block"
+
+            }
+            document.querySelector('.inner').style.width = `${curr}%`
+        })
+        // pause or play the video
+        const play = (e) => {
+            // Condition when to play a video
+            if (video.paused) {
+                document.querySelector(".fa-play").style.display = "none"
+                document.querySelector(".fa-pause").style.display = "block"
+
+                document.querySelector(".play").src = "images/pause.svg"
+                document.querySelector(".p-button-inner").style.display = "none"
+                video.play()
+            }
+            else {
+                document.querySelector(".fa-play").style.display = "block"
+                document.querySelector(".fa-pause").style.display = "none"
+                document.querySelector(".play").style.display = "none"
+                document.querySelector(".p-button-inner").style.display = "none"
+                video.pause()
+            }
+
+        }
+
+
+        const fullScreen = (e) => {
+            e.preventDefault()
+            video.requestFullscreen()
+        }
+
+    </script>
+
+    <!-- projects -->
+    <script type="text/javascript">
+        // Modal open
+        function showModal(url) {
+            document.getElementById('main-modal').style.display = 'grid';
+            document.getElementById('first_modal_img').src = url;
+
+        }
+        function myClose() {
+            document.getElementById("main-modal").style.display = 'none';
+        }
+        function changeFirst(isHover, firstImg, p1, p2, p3, p4, p5, pIcon1, cIcon1, pIcon2, cIcon2, pIcon3, cIcon3, pIcon4, cIcon4, pIcon5, cIcon5) {
+            var array = [p1, p2, p3, p4, p5]
+            if (isHover) {
+
+                document.getElementById('first').style.background = `linear-gradient(rgba(17, 22, 51, .6), rgba(17, 22, 51, 1)),url(${firstImg}) no-repeat `;
+                document.getElementById('first').style.backgroundPosition = "center center";
+                document.getElementById('first').style.backgroundSize = "cover";
+                document.getElementById(`${pIcon1}`).src = `${cIcon1}`;
+                document.getElementById(`${pIcon2}`).src = `${cIcon2}`;
+                document.getElementById(`${pIcon3}`).src = `${cIcon3}`;
+                document.getElementById(`${pIcon4}`).src = `${cIcon4}`;
+                document.getElementById(`${pIcon5}`).src = `${cIcon5}`;
+                for (var i = 0; i < array.length; i++) {
+                    document.getElementById(`${array[i]}`).style.border = "1px solid #4E5D9B"
+                    document.getElementById(`${array[i]}`).style.color = "#4E5D9B"
+                }
+                // const note = document.querySelectorAll('#p1,#p2,#p3,#p4,#p5')
+                // note.style.border = "1px solid #4E5D9B";
+            } else {
+                var x = window.matchMedia("(max-width: 768px)")
+                myFunction(x) // Call listener function at run time
+                x.addListener(myFunction) // Attach listener function on state changes
+                function myFunction(x) {
+                    if (x.matches) { // If media query matches
+                        document.getElementById('first').style.background = "linear-gradient(rgba(17, 22, 51, .6), rgba(17, 22, 51, 1)), url('') cover";
+                        console.log("bgg")
+                    } else {
+                        document.getElementById('first').style.background = "linear-gradient(rgba(17, 22, 51, .6), rgba(17, 22, 51, 1)), url(/images/upcomingBg.png)";
+                    }
+                }
+
+                // document.getElementById('first').style.background = "#111633 url('images/Vector-Hbottom.png') no-repeat right";
+                document.getElementById('p1').style.border = "1px solid  #10E9D8"
+                document.getElementById('p2').style.border = "1px solid  #10E9D8"
+                document.getElementById('p3').style.border = "1px solid #10E9D8"
+                document.getElementById('p4').style.border = "1px solid #10E9D8"
+                document.getElementById('p5').style.border = "1px solid  #10E9D8"
+                document.getElementById('p6').style.border = "1px solid  #10E9D8"
+                document.getElementById('p1').style.color = "#ffff"
+                document.getElementById('p2').style.color = "#ffff"
+                document.getElementById('p3').style.color = "#ffff"
+                document.getElementById('p4').style.color = "#ffff"
+                document.getElementById('p5').style.color = "#ffff"
+                document.getElementById('p6').style.color = "#ffff"
+                document.getElementById('pIcon1').src = 'images/p1.svg'
+                document.getElementById('pIcon2').src = 'images/p2.svg'
+                document.getElementById('pIcon3').src = 'images/p3.svg'
+                document.getElementById('pIcon4').src = 'images/p4.svg'
+                document.getElementById('pIcon5').src = 'images/p5.svg'
+                document.getElementById('pIcon6').src = 'images/p6.svg'
+            }
+        }
+
+    </script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.owl-one').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                navText: ["<div class='nav-button owl-prev'><img src='images/left arrow.svg' width='37px' height='37px'></div>", "<div class='nav-button owl-next'> <img src='images/right arrow.svg' width='37px' height='37px'></div>"],
+                items: 3,
+                margin: 10,
+                autoplay: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+
+            $('.owl-two').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                navText: ["<div class='nav-button owl-prev'><img src='images/left arrow.svg' width='37px' height='37px'></div>", "<div class='nav-button owl-next'> <img src='images/right arrow.svg' width='37px' height='37px'></div>"],
+                items: 4,
+                margin: 10,
+                autoplay: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 4,
+                        margin: 0,
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
